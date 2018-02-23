@@ -39,12 +39,12 @@ public struct LiteralValue: Describable {
     }
 
     public init(_ value: String) {
-        description = "'\(value.replacingOccurrences(of: "'", with: "''"))'"
+        description = "\(value)"
     }
 
     public init(_ value: Data) {
         let string = String(data: value, encoding: .utf8) ?? ""
-        description = "'\(string.replacingOccurrences(of: "'", with: "''"))'"
+        description = "\(string)"
     }
 
     public init(_ value: Void?) {
