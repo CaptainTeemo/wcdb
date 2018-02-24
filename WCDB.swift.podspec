@@ -1,7 +1,7 @@
 # pod lib lint --verbose WCDB.swift.podspec
 # pod trunk push WCDB.swift.podspec --verbose
 Pod::Spec.new do |wcdb|
-  wcdb.name         = "WCDB.swift"
+  wcdb.name         = "WCDB.swift_ct"
   wcdb.version      = "1.0.6"
   wcdb.summary      = "WCDB is a cross-platform database framework developed by WeChat."
   wcdb.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |wcdb|
   wcdb.osx.deployment_target = "10.9"
   wcdb.watchos.deployment_target = "2.0"
   wcdb.tvos.deployment_target = "9.0"
-  wcdb.source       = { :git => "https://github.com/Tencent/wcdb.git", :tag => "v#{wcdb.version}" }
+  wcdb.source       = { :git => "https://github.com/CaptainTeemo/wcdb.git", :tag => "v#{wcdb.version}" }
   wcdb.source_files  = "swift/source/**/*.swift", "swift/source/**/**/*.swift", "swift/source/util/*.{h,c}", "repair"
   wcdb.module_name = "WCDBSwift"
   wcdb.libraries = "z"
